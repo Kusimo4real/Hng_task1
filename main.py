@@ -37,6 +37,6 @@ async def hello(visitor_name: str, request: Request):
 
         "client_ip": client_ip,
         "location": city,
-        "greeting": f"Hello, {visitor_name}!, the temperature is {temperature} degrees Celcius in New York"
+        "greeting": f"Hello, {visitor_name}!, the temperature is {temperature} degrees Celcius in {city}"
     }
     return response
